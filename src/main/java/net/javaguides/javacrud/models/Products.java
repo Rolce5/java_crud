@@ -1,4 +1,4 @@
-package net.javaguides.java_crud.models;
+package net.javaguides.javacrud.models;
 
 import jakarta.persistence.*;
 
