@@ -9,7 +9,7 @@
 <body>
 <div class="container">
     <h1 class="text-center my-4">Products</h1>
-    <a class="btn btn-primary" href="/templates/products/create">Create Products</a>
+    <a class="btn btn-primary mb-2" href="/products/create">Create Products</a>
     <table class="table ">
         <thead>
         <tr>
@@ -36,11 +36,11 @@
             <td th:text="${product.createdAt}"></td>
             <td style="white-space:nowrap">
                 <a class="btn btn-primary btn-sm"
-                   th:href="@{/templates/products/edit(id=${product.id})}">
+                   th:href="@{/products/edit(id=${product.id})}">
                     Edit
                 </a>
                 <a class="btn btn-danger btn-sm"
-                   th:href="@{/templates/products/delete(id=${product.id})}"
+                   th:href="@{/products/delete(id=${product.id})}"
                    onclick="return confirm('Are you sure ?')"
                 >
                     Delete
